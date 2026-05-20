@@ -3,69 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ANUJ MALVIYA - Python-ML (static copy)</title>
+  <title>ANUJ MALVIYA — Python-ML</title>
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:24px;color:#0b0c0d}
-    header{border-bottom:1px solid #e1e4e8;padding-bottom:12px;margin-bottom:16px}
-    h1{font-size:20px;margin:6px 0}
-    .repo-title{font-size:28px;margin:6px 0}
-    .section{margin-top:18px}
-    .files table{width:100%;border-collapse:collapse}
-    .files td{padding:6px;border-bottom:1px solid #eee}
-    .meta{color:#586069;font-size:13px}
-    .note{background:#f6f8fa;padding:12px;border-radius:6px;margin-top:12px}
+    :root{--bg:#0d1117;--panel:#0f1720;--muted:#8b949e;--accent:#58a6ff;--border:#21262d;--card:#161b22}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#c9d1d9}
+    /* Top navigation */
+    .topbar{height:56px;background:#0b1220;border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 16px}
+    .brand{font-weight:700;color:#fff;margin-right:18px}
+    .search{flex:1;max-width:520px;margin-left:8px}
+    .container{display:flex;gap:24px;padding:24px;max-width:1200px;margin:0 auto}
+
+    /* Main column */
+    .main{flex:1}
+    .repo-header{display:flex;align-items:flex-start;gap:12px}
+    .owner{display:flex;flex-direction:column}
+    .owner .name{color:var(--accent);font-weight:700}
+    .repo-name{font-size:20px;margin-top:6px}
+    .meta{color:var(--muted);font-size:13px;margin-top:6px}
+
+    /* layout */
+    .content{display:flex;gap:24px;margin-top:18px}
+    .files-panel{flex:1;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px}
+    .files-header{display:flex;justify-content:space-between;align-items:center;padding:6px 8px}
+    .files-list{margin-top:6px}
+    .file-row{display:flex;justify-content:space-between;padding:10px 12px;border-top:1px solid rgba(255,255,255,0.02);align-items:center}
+    .file-row:first-child{border-top:none}
+    .file-left{display:flex;gap:12px;align-items:center}
+    .file-icon{width:20px;height:20px;background:#0b1220;border-radius:4px;display:inline-block}
+    .file-name{color:#c9d1d9}
+    .file-meta{color:var(--muted);font-size:12px}
+
+    /* sidebar */
+    .sidebar{width:300px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:12px}
+    .card h3{margin:0 0 8px 0;color:#c9d1d9}
+    .langbar{height:8px;background:#0b1220;border-radius:6px;overflow:hidden;margin-top:8px}
+    .langbar > span{display:block;height:100%;background:#ff7b00;width:100%}
+
+    a{color:var(--accent);text-decoration:none}
+
+    @media (max-width:900px){.container{padding:12px}.sidebar{display:none}}
   </style>
 </head>
 <body>
-  <header>
-    <div style="font-weight:700;font-size:18px;color:#0366d6">ANUJ MALVIYA</div>
-    <div class="repo-title">dheerpanchal230683 / Python-ML</div>
-    <div class="meta">Public repository · Jupyter Notebook 100%</div>
-  </header>
+  <div class="topbar">
+    <div class="brand">Repository</div>
+    <div class="search"></div>
+    <div style="color:var(--muted);font-size:13px">Watch · Fork · Star</div>
+  </div>
 
-  <section class="section">
-    <h2>Folders and files</h2>
-    <div class="files">
-      <table>
-        <tr><td>4_Recurrent_Neural_Network.ipynb</td><td class="meta">Created using Colab · 2 weeks ago</td></tr>
-        <tr><td>CI1_Image_Classification_using_ANN.ipynb</td><td class="meta">3 weeks ago</td></tr>
-        <tr><td>Functions_LAB_6.ipynb</td><td class="meta">last week</td></tr>
-        <tr><td>LAB1(10_03_2026).ipynb</td><td class="meta">2 months ago</td></tr>
-        <tr><td>LAB2(12_03_2026).ipynb</td><td class="meta">2 months ago</td></tr>
-        <tr><td>LAB3.ipynb</td><td class="meta">2 months ago</td></tr>
-        <tr><td>LAB4.ipynb</td><td class="meta">2 months ago</td></tr>
-        <tr><td>Lab_5.ipynb</td><td class="meta">last week</td></tr>
-        <tr><td>Linear_Regression_Dheer.ipynb</td><td class="meta">3 weeks ago</td></tr>
-        <tr><td>README .md</td><td class="meta">Create README .md · 2 months ago</td></tr>
-      </table>
-    </div>
-  </section>
+  <div class="container">
+    <main class="main">
+      <div class="repo-header">
+        <div class="owner">
+          <div style="font-size:13px;color:var(--muted)">Owner</div>
+          <div class="name">ANUJ MALVIYA</div>
+        </div>
+        <div>
+          <div class="repo-name">dheerpanchal230683 / <strong>Python-ML</strong></div>
+          <div class="meta">Public · Jupyter Notebook 100%</div>
+        </div>
+      </div>
 
-  <section class="section">
-    <h2>About</h2>
-    <p class="meta">No description, website, or topics provided.</p>
-  </section>
+      <div class="content">
+        <section class="files-panel">
+          <div class="files-header">
+            <div style="font-weight:600">Folders and files</div>
+            <div class="meta">main · 1 Branch · 0 Tags</div>
+          </div>
 
-  <section class="section">
-    <h2>Languages</h2>
-    <p class="meta">Jupyter Notebook 100.0%</p>
-  </section>
+          <div class="files-list">
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">4_Recurrent_Neural_Network.ipynb</div><div class="file-meta">Created using Colab · 2 weeks ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">CI1_Image_Classification_using_ANN.ipynb</div><div class="file-meta">3 weeks ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">Functions_LAB_6.ipynb</div><div class="file-meta">Created using Colab · yesterday</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">LAB1(10_03_2026).ipynb</div><div class="file-meta">2 months ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">LAB2(12_03_2026).ipynb</div><div class="file-meta">2 months ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">LAB3.ipynb</div><div class="file-meta">2 months ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">LAB4.ipynb</div><div class="file-meta">2 months ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">Lab_5.ipynb</div><div class="file-meta">last week</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">Linear_Regression_Dheer.ipynb</div><div class="file-meta">3 weeks ago</div></div></div><div class="file-meta">Jupyter Notebook</div></div>
+            <div class="file-row"><div class="file-left"><div class="file-icon"></div><div><div class="file-name">README .md</div><div class="file-meta">Create README .md · 2 months ago</div></div></div><div class="file-meta">Markdown</div></div>
+          </div>
+        </section>
 
-  <!-- Contributors section intentionally removed as requested -->
+        <aside class="sidebar">
+          <div class="card">
+            <h3>About</h3>
+            <div class="meta">No description, website, or topics provided.</div>
+          </div>
 
-  <section class="section">
-    <h2>Additional Links</h2>
-    <ul>
-      <li><a href="https://github.com/dheerpanchal230683/Python-ML">Code</a></li>
-      <li><a href="https://github.com/dheerpanchal230683/Python-ML/issues">Issues</a></li>
-      <li><a href="https://github.com/dheerpanchal230683/Python-ML/pulls">Pull requests</a></li>
-      <li><a href="https://github.com/dheerpanchal230683/Python-ML/actions">Actions</a></li>
-      <li><a href="https://github.com/dheerpanchal230683/Python-ML/projects">Projects</a></li>
-    </ul>
-  </section>
+          <div class="card">
+            <h3>Releases</h3>
+            <div class="meta">No releases published</div>
+          </div>
 
-  <footer class="meta note">
-    Static copy created for assignment. Contributors section removed.
-  </footer>
+          <div class="card">
+            <h3>Languages</h3>
+            <div class="meta">Jupyter Notebook 100.0%</div>
+            <div class="langbar"><span></span></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
