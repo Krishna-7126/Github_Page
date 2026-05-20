@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/python_ml_github_clone_anuj.html"
+    }
+  ]
+}
